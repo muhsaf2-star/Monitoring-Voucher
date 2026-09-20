@@ -1,6 +1,20 @@
 <!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Samsung Voucher Monitoring</title><style>
 :root{--b:#1261ff;--n:#061b3b;--bg:#f4f7fb;--t:#13213a;--m:#6f7d96;--l:#e2e8f1;--g:#10a66a;--r:#df4040}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--t);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}button,input,select{font:inherit}.side{position:fixed;left:0;top:0;bottom:0;width:250px;background:linear-gradient(180deg,#061b3b,#0a2e66);color:#fff;padding:24px 16px;z-index:5}.brand{padding:5px 12px 28px}.brand b{font-size:24px;letter-spacing:2px}.brand span{display:block;color:#b9c8df;font-size:12px;margin-top:3px}.nav{display:grid;gap:6px}.nav button{border:0;background:transparent;color:#dce8fa;text-align:left;padding:14px;border-radius:12px;font-weight:750;cursor:pointer}.nav button:hover,.nav button.active{background:var(--b);color:#fff}.main{margin-left:250px;padding:28px;max-width:1550px}.top{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}.top h1{margin:0;font-size:28px}.top p{margin:5px 0 0;color:var(--m);font-size:13px}.pill{padding:9px 13px;border-radius:999px;background:#e9f8f1;color:#08794c;font-weight:800;font-size:12px}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.card{background:#fff;border:1px solid var(--l);border-radius:18px;padding:18px;box-shadow:0 7px 25px #132b4e0d}.metric .label{font-size:11px;font-weight:800;color:var(--m)}.metric .value{font-size:30px;font-weight:850;margin-top:6px}.metric small{color:var(--m)}.section{margin-top:14px}.row,.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.section h2{font-size:16px;margin:0 0 12px}.status{padding:12px 14px;border-radius:12px;background:#eef4ff;color:#3a5378;font-size:13px}.good{background:#e7f8f0;color:#08794c}.bad{background:#fff0f0;color:#b82e2e}.btn{border:0;border-radius:12px;background:var(--b);color:#fff;padding:12px 17px;font-weight:850;cursor:pointer}.btn:disabled{opacity:.45;cursor:not-allowed}.secondary{background:#edf2f8;color:#29476f}.input,.select{width:100%;border:1px solid #d5ddea;background:#fff;border-radius:12px;padding:13px 14px;outline:0}.input:focus,.select:focus{border-color:var(--b);box-shadow:0 0 0 3px #1261ff17}.field label{display:block;color:var(--m);font-size:11px;font-weight:800;margin:0 0 6px}.pos{display:grid;grid-template-columns:auto 1fr;gap:8px;align-items:center}.prefix{background:#edf3ff;color:var(--b);padding:13px 12px;border-radius:12px;font-weight:850;white-space:nowrap}.selected{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}.chip{background:#edf3ff;color:#1855c9;border:1px solid #cddcff;border-radius:999px;padding:8px 10px;font-weight:750;font-size:12px}.list{display:grid;gap:8px}.item{display:flex;justify-content:space-between;gap:12px;padding:12px;border:1px solid var(--l);border-radius:12px}.item b{font-size:13px}.item small{display:block;color:var(--m);margin-top:3px}.empty{padding:20px;text-align:center;color:var(--m)}.modal{position:fixed;inset:0;background:#020e22a0;display:flex;align-items:center;justify-content:center;padding:18px;z-index:20}.hide{display:none!important}.modalbox{width:min(650px,100%);max-height:min(84vh,760px);background:#fff;border-radius:22px;overflow:hidden;box-shadow:0 30px 90px #0005;display:flex;flex-direction:column}.modalhead,.modalfoot{padding:17px 18px;border-bottom:1px solid var(--l);display:flex;align-items:center;justify-content:space-between;gap:10px}.modalfoot{border-top:1px solid var(--l);border-bottom:0}.modalbody{padding:14px;overflow:auto}.vrow{display:flex;align-items:center;justify-content:space-between;gap:12px;border:1px solid var(--l);padding:13px;border-radius:13px;margin-top:8px;cursor:pointer}.vrow.sel{border-color:var(--b);background:#f2f6ff}.vrow .code{font-weight:850}.vrow small{color:var(--m)}.check{width:21px;height:21px;accent-color:var(--b)}.mobilebar{display:none}.toast{position:fixed;right:20px;bottom:20px;z-index:50;padding:13px 16px;border-radius:12px;color:#fff;background:#16345e;box-shadow:0 12px 35px #0003;font-weight:750}.toast.good{background:#0d9a63}.toast.bad{background:#d83e3e}
 @media(max-width:850px){.side{display:none}.main{margin:0;padding:15px 13px 90px}.top h1{font-size:23px}.top p{font-size:12px}.grid{grid-template-columns:repeat(2,1fr);gap:8px}.card{padding:14px;border-radius:15px}.metric .value{font-size:25px}.row,.formgrid{grid-template-columns:1fr;gap:10px}.mobilebar{display:flex;position:fixed;left:9px;right:9px;bottom:9px;z-index:10;background:#fff;border:1px solid var(--l);border-radius:18px;box-shadow:0 12px 35px #0002;padding:6px;justify-content:space-around}.mobilebar button{border:0;background:transparent;color:var(--m);font-size:11px;font-weight:800;padding:7px 9px}.mobilebar button.active{color:var(--b)}.modal{padding:10px}.modalbox{max-height:88vh;border-radius:18px}.prefix{font-size:12px;padding:13px 9px}.toast{left:12px;right:12px;bottom:82px;text-align:center}}
+
+/* DASHBOARD CHARTS */
+.chart-card{min-height:330px}
+.chart-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:16px}
+.chart-head h2{margin:0;font-size:16px}.chart-head p{margin:4px 0 0;color:var(--m);font-size:11px}
+.chart-list{display:grid;gap:16px;margin-top:8px}
+.chart-row{display:grid;gap:7px}.chart-row-top{display:flex;justify-content:space-between;gap:12px;align-items:center}.chart-row-top b{font-size:12px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.chart-row-top span{font-size:11px;color:var(--m);white-space:nowrap}
+.chart-track{height:12px;background:#edf2f8;border-radius:999px;overflow:hidden}.chart-bar{height:100%;min-width:4px;border-radius:999px;background:linear-gradient(90deg,#1261ff,#55a1ff);transition:width .35s ease}
+.sales-track .chart-bar{background:linear-gradient(90deg,#0b8f62,#38c993)}
+.daily-chart{height:210px;display:flex;align-items:flex-end;gap:9px;padding:8px 2px 0;border-bottom:1px solid var(--l);margin-top:10px}
+.day-col{height:100%;flex:1;min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:6px}.day-value{font-size:10px;font-weight:800;color:#31527d}.day-bar{width:min(34px,72%);min-height:5px;border-radius:8px 8px 3px 3px;background:linear-gradient(180deg,#1261ff,#8db8ff);transition:height .35s ease}.day-col small{font-size:9px;color:var(--m);max-width:55px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.donut-wrap{display:grid;grid-template-columns:180px 1fr;gap:18px;align-items:center;min-height:245px}.donut{width:170px;height:170px;border-radius:50%;display:grid;place-items:center;background:conic-gradient(#1261ff 0 100%,#edf2f8 100%);position:relative;margin:auto}.donut:after{content:"";width:104px;height:104px;background:#fff;border-radius:50%;position:absolute}.donut-center{position:relative;z-index:1;text-align:center}.donut-center b{display:block;font-size:18px}.donut-center span{font-size:10px;color:var(--m)}.legend{display:grid;gap:9px;max-height:205px;overflow:auto}.legend-item{display:grid;grid-template-columns:10px 1fr auto;gap:8px;align-items:center;font-size:11px}.legend-dot{width:10px;height:10px;border-radius:50%;background:#1261ff}.legend-item small{color:var(--m)}
+.dashboard-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.dashboard-grid .wide{grid-column:1/-1}
+@media(max-width:850px){.dashboard-grid{grid-template-columns:1fr}.dashboard-grid .wide{grid-column:auto}.chart-card{min-height:0}.donut-wrap{grid-template-columns:1fr;gap:10px}.legend{max-height:none}.donut{width:145px;height:145px}.donut:after{width:88px;height:88px}.daily-chart{height:170px}.chart-row-top b{max-width:58%}}
 </style></head><body>
 <aside class="side"><div class="brand"><b>SAMSUNG</b><span>Voucher Monitoring</span></div><div class="nav"><button data-page="dashboard" class="active">⌂ Dashboard</button><button data-page="redeem">🎟 Gunakan Voucher</button><button data-page="check">⌕ Cek Voucher</button><button data-page="history">☷ Histori</button></div></aside>
 <main class="main"><div class="top"><div><h1 id="title">Dashboard</h1><p id="subtitle">Monitoring penggunaan voucher Samsung secara real-time</p></div><div id="apiState" class="pill">Connecting…</div></div><div id="content"></div></main>
@@ -38,7 +52,104 @@ document.querySelectorAll("[data-page]").forEach(x=>{
   });
 });
 async function ping(){try{await get("test");$("apiState").textContent="API Connected"}catch(e){$("apiState").textContent="API Error";$("apiState").className="pill bad"}}
-async function dashboard(){$("title").textContent="Dashboard";$('subtitle').textContent="Monitoring penggunaan voucher Samsung secara real-time";$('content').innerHTML='<div class="card"><div class="status">Memuat…</div></div>';try{let d=(await get("dashboard")).data||{},ps=d.products||[],ss=d.sales||[],rr=d.recent||[];$('content').innerHTML=`<div class="grid"><div class="card metric"><div class="label">TOTAL VOUCHER</div><div class="value">${d.total||0}</div></div><div class="card metric"><div class="label">AVAILABLE</div><div class="value">${d.available||0}</div></div><div class="card metric"><div class="label">USED</div><div class="value">${d.used||0}</div></div><div class="card metric"><div class="label">TOTAL BENEFIT</div><div class="value" style="font-size:20px">${money(d.totalBenefit)}</div></div></div><div class="row section"><div class="card"><h2>Penggunaan per Produk</h2><div class="list">${ps.length?ps.map(x=>`<div class="item"><div><b>${esc(x.product)}</b><small>${x.count||0} transaksi</small></div><b>${money(x.benefit)}</b></div>`).join(""):"<div class=empty>Belum ada transaksi.</div>"}</div></div><div class="card"><h2>Top Sales</h2><div class="list">${ss.length?ss.map((x,i)=>`<div class="item"><div><b>#${i+1} ${esc(x.sales)}</b><small>${x.count||0} transaksi</small></div><b>${money(x.benefit)}</b></div>`).join(""):"<div class=empty>Belum ada transaksi.</div>"}</div></div></div><div class="card section"><h2>Recent Usage</h2><div class="list">${rr.length?rr.map(x=>`<div class="item"><div><b>${esc(x.code)}</b><small>${esc(x.product)} · ${esc(x.sales)}</small></div><small>${esc(x.pos)}</small></div>`).join(""):"<div class=empty>Belum ada histori.</div>"}</div></div>`}catch(e){$('content').innerHTML=`<div class="card"><div class="status bad">${esc(e.message)}</div></div>`}}
+async function dashboard(){
+  $("title").textContent="Dashboard";
+  $('subtitle').textContent="Monitoring penggunaan voucher Samsung secara real-time";
+  $('content').innerHTML='<div class="card"><div class="status">Memuat dashboard…</div></div>';
+  try{
+    let d=(await get("dashboard")).data||{},
+        ps=d.products||[],
+        ss=d.sales||[],
+        dd=d.daily||[],
+        rr=d.recent||[];
+
+    const productMax=Math.max(...ps.map(x=>Number(x.count||0)),1);
+    const salesMax=Math.max(...ss.map(x=>Number(x.count||0)),1);
+    const dailyMax=Math.max(...dd.map(x=>Number(x.count||0)),1);
+    const totalBenefit=Number(d.totalBenefit||0);
+
+    const productChart=ps.length?ps.map(x=>{
+      const pct=Math.max(3,Math.round(Number(x.count||0)/productMax*100));
+      return `<div class="chart-row">
+        <div class="chart-row-top"><b title="${esc(x.product)}">${esc(x.product)}</b><span>${x.count||0} transaksi · ${money(x.benefit)}</span></div>
+        <div class="chart-track"><div class="chart-bar" style="width:${pct}%"></div></div>
+      </div>`;
+    }).join(""):"<div class=empty>Belum ada transaksi.</div>";
+
+    const salesChart=ss.length?ss.map((x,i)=>{
+      const pct=Math.max(3,Math.round(Number(x.count||0)/salesMax*100));
+      return `<div class="chart-row">
+        <div class="chart-row-top"><b title="${esc(x.sales)}">#${i+1} ${esc(x.sales)}</b><span>${x.count||0} transaksi · ${money(x.benefit)}</span></div>
+        <div class="chart-track sales-track"><div class="chart-bar" style="width:${pct}%"></div></div>
+      </div>`;
+    }).join(""):"<div class=empty>Belum ada transaksi.</div>";
+
+    const dailyChart=dd.length?dd.map(x=>{
+      const h=Math.max(7,Math.round(Number(x.count||0)/dailyMax*145));
+      return `<div class="day-col"><div class="day-value">${x.count||0}</div><div class="day-bar" style="height:${h}px"></div><small title="${esc(x.date)}">${esc(x.date)}</small></div>`;
+    }).join(""):'<div class=empty style="width:100%">Belum ada data harian.</div>';
+
+    const palette=['#1261ff','#49a0ff','#7db8ff','#9b8cff','#10a66a','#f3a43b','#df4040','#66758f'];
+    let running=0;
+    const legend=ps.length?ps.map((x,i)=>{
+      const benefit=Number(x.benefit||0);
+      const pct=totalBenefit?benefit/totalBenefit*100:0;
+      const start=running;
+      running+=pct;
+      return `<div class="legend-item"><i class="legend-dot" style="background:${palette[i%palette.length]}"></i><div><b>${esc(x.product)}</b><small>${money(benefit)} · ${pct.toFixed(pct>=10?0:1)}%</small></div><span>${x.count||0}</span></div>`;
+    }).join(""):"<div class=empty>Belum ada data.</div>";
+    const donutStops=ps.length?ps.map((x,i)=>{
+      const pct=totalBenefit?Number(x.benefit||0)/totalBenefit*100:0;
+      return `${palette[i%palette.length]} ${running=0}`;
+    }):[];
+    let cursor=0;
+    const stops=ps.length?ps.map((x,i)=>{
+      const pct=totalBenefit?Number(x.benefit||0)/totalBenefit*100:0;
+      const s=cursor;cursor+=pct;
+      return `${palette[i%palette.length]} ${s}% ${cursor}%`;
+    }).join(','): '#edf2f8 0 100%';
+
+    $('content').innerHTML=`
+      <div class="grid">
+        <div class="card metric"><div class="label">TOTAL VOUCHER</div><div class="value">${d.total||0}</div><small>Semua voucher</small></div>
+        <div class="card metric"><div class="label">AVAILABLE</div><div class="value">${d.available||0}</div><small>${Number(d.availablePct||0).toFixed(0)}% dari total</small></div>
+        <div class="card metric"><div class="label">USED</div><div class="value">${d.used||0}</div><small>${Number(d.usedPct||0).toFixed(0)}% dari total</small></div>
+        <div class="card metric"><div class="label">TOTAL BENEFIT</div><div class="value" style="font-size:20px">${money(d.totalBenefit)}</div><small>Benefit transaksi</small></div>
+      </div>
+
+      <div class="dashboard-grid section">
+        <div class="card chart-card">
+          <div class="chart-head"><div><h2>Penggunaan per Produk</h2><p>Jumlah transaksi berdasarkan produk</p></div></div>
+          <div class="chart-list">${productChart}</div>
+        </div>
+
+        <div class="card chart-card">
+          <div class="chart-head"><div><h2>Top Sales</h2><p>Jumlah transaksi berdasarkan sales</p></div></div>
+          <div class="chart-list">${salesChart}</div>
+        </div>
+
+        <div class="card chart-card">
+          <div class="chart-head"><div><h2>Penggunaan 7 Hari Terakhir</h2><p>Jumlah voucher yang digunakan per hari</p></div></div>
+          <div class="daily-chart">${dailyChart}</div>
+        </div>
+
+        <div class="card chart-card">
+          <div class="chart-head"><div><h2>Kontribusi Benefit per Produk</h2><p>Total benefit berdasarkan produk</p></div></div>
+          <div class="donut-wrap">
+            <div class="donut" style="background:conic-gradient(${stops})"><div class="donut-center"><b>${money(totalBenefit)}</b><span>Total Benefit</span></div></div>
+            <div class="legend">${legend}</div>
+          </div>
+        </div>
+
+        <div class="card section wide">
+          <div class="chart-head"><div><h2>Recent Usage</h2><p>Aktivitas voucher terbaru</p></div></div>
+          <div class="list">${rr.length?rr.map(x=>`<div class="item"><div><b>${esc(x.code)}</b><small>${esc(x.product)} · ${esc(x.sales)}</small></div><div style="text-align:right"><b>${money(x.benefit||x.totalBenefit)}</b><small>${esc(x.pos)}</small></div></div>`).join(""):"<div class=empty>Belum ada histori.</div>"}</div>
+        </div>
+      </div>`;
+  }catch(e){
+    $('content').innerHTML=`<div class="card"><div class="status bad">${esc(e.message)}</div></div>`;
+  }
+}
 async function loadMasters(){masters=(await get("master")).data||{sales:[],products:[]}}async function loadAvail(){available=(await get("available")).data||[]}
 async function redeem(){$("title").textContent="Gunakan Voucher";$('subtitle').textContent="Pilih beberapa voucher untuk satu transaksi";$('content').innerHTML='<div class="card"><div class="status">Memuat master…</div></div>';try{await Promise.all([loadMasters(),loadAvail()]);renderRedeem()}catch(e){$('content').innerHTML=`<div class="card"><div class="status bad">${esc(e.message)}</div></div>`}}
 function prefix(){let d=new Intl.DateTimeFormat("en-CA",{timeZone:"Asia/Jakarta",year:"numeric",month:"2-digit"}).format(new Date()).replace("-","");return STORE_CODE+d}function productRow(){return masters.products.find(x=>x.NAMA_PRODUK===$("product")?.value)}function val(){return available.filter(x=>selected.has(String(x.KODE_VOUCHER).trim().toUpperCase())).reduce((a,x)=>a+Number(x.NILAI_VOUCHER||0),0)}
