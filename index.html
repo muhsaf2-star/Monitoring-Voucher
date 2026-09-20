@@ -37,7 +37,7 @@ button,input{font:inherit}.app{min-height:100vh;display:flex}.side{width:248px;b
 <div id="modal" class="modal hide"><div class="modalbox"><div class="modalhead"><b>Voucher AVAILABLE</b><button class="btn secondary" onclick="closeModal()">Tutup</button></div><div class="modalbody"><input id="voucherSearch" class="input" placeholder="Cari kode voucher…" oninput="filterVoucher()"><div id="voucherList" style="margin-top:12px"></div></div></div></div>
 
 <script>
-const API_BASE = "PASTE_APPS_SCRIPT_EXEC_URL_HERE";
+const API_BASE = "https://script.google.com/macros/s/AKfycbyQx--YqYHU-PLXWxKobnPjtZ3CEfz7FzUplZ81X4lXHoeZ_PpIqHxeXiMvIEDUscdC/exec";
 let dashboardData=null, masters=null, available=[];
 
 async function apiGet(action,params={}){
